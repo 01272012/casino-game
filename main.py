@@ -4,6 +4,7 @@ from player import Player
 from ui import Menu
 from games.blackjack import BlackjackGame
 from games.slots import SlotsGame
+from games.roulette import RouletteGame
 
 # Initialize Pygame
 pygame.init()
@@ -46,7 +47,8 @@ class CasinoGame:
                         self.current_game = SlotsGame(self.player, WIDTH, HEIGHT)
                         self.current_state = "PLAYING"
                     elif choice == "ROULETTE":
-                        self.current_state = "ROULETTE"
+                        self.current_game = RouletteGame(self.player, WIDTH, HEIGHT)
+                        self.current_state = "PLAYING"
                     elif choice == "POOL":
                         self.current_state = "POOL"
                     elif choice == "HORSE_RACING":
