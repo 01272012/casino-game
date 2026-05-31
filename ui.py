@@ -43,11 +43,12 @@ class Menu:
         button_x = (width - button_width) // 2
         
         self.buttons = {
-            "BLACKJACK": Button(button_x, 150, button_width, button_height, "Blackjack", 28),
-            "SLOTS": Button(button_x, 230, button_width, button_height, "Slots", 28),
-            "ROULETTE": Button(button_x, 310, button_width, button_height, "Roulette", 28),
-            "POOL": Button(button_x, 390, button_width, button_height, "Pool", 28),
-            "HORSE_RACING": Button(button_x, 470, button_width, button_height, "Horse Racing", 28),
+            "TUTORIAL": Button(button_x, 130, button_width, button_height, "📖 Tutorial", 28),
+            "BLACKJACK": Button(button_x, 200, button_width, button_height, "Blackjack", 28),
+            "SLOTS": Button(button_x, 270, button_width, button_height, "Slots", 28),
+            "ROULETTE": Button(button_x, 340, button_width, button_height, "Roulette", 28),
+            "POOL": Button(button_x, 410, button_width, button_height, "Pool", 28),
+            "HORSE_RACING": Button(button_x, 480, button_width, button_height, "Horse Racing", 28),
             "QUIT": Button(button_x, 550, button_width, button_height, "Quit", 28),
         }
         
